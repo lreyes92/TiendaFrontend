@@ -1,0 +1,21 @@
+<div id="form">
+<form *ngIf="item" id="editForm" class="form">
+<ul>
+<li>
+    <input type="text" class="field-style field-split align-left" placeholder="Name" [(ngModel)]="item.name" [ngModelOptions]="{standalone: true}"/>
+
+</li>
+<li>
+    <input type="text" class="field-style field-split align-left" placeholder="Description" [(ngModel)]="item.description" [ngModelOptions]="{standalone: true}"/>
+    <input type="number" class="field-style field-split align-right" placeholder="Stock" [(ngModel)]="item.stock" [ngModelOptions]="{standalone: true}"/>
+</li>
+<li>
+    <input type="number" class="field-style field-split align-left" placeholder="Price" [(ngModel)]="item.price" [ngModelOptions]="{standalone: true}"/>
+    <input type="text" class="field-style field-split align-right" placeholder="Image-Url" [(ngModel)]="item.img" [ngModelOptions]="{standalone: true}"/>
+</li>
+<li>
+<input type="submit" value="Update" (click)="updateItem(item)"/>
+</li>
+</ul>
+</form>
+</div>

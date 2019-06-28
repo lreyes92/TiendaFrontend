@@ -1,0 +1,13 @@
+<div class="items" id="items">
+
+  <p>There are {{totalItems()}} in stock <img class="cartIcon" src="../assets/cart.png" alt="Imagen no encontrada" (click)="goCart()"></p>
+  <!-- <p>There are {{myItems | total:"stock"}} in stock</p> -->
+  <ul id="products">
+
+    <li *ngFor="let item of myItems" class="product" [class.selected]="item.selected">
+      <app-item [item]="item" (delete)="deleteItem($event)" (update)="updateItem($event)" (AddCart)="addItemToCart($event)"></app-item>
+
+    </li>
+
+  </ul>
+</div>

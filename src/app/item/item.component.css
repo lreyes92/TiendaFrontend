@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Lobster|Rock+Salt&display=swap');
+
+h2 {
+  font-size: 3vw;
+  margin-top: 0;
+}
+
+.editIcon {
+  width: 2vw;
+  position: relative;
+  left: 9vw;
+  top: 0.4vw;
+  border-radius: 5px;
+}
+
+.editIcon:hover {
+  width: 2.2vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+#quantity {
+  width: 2vw;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.totalPrice {
+  border: solid;
+  border-radius: 6px;
+  padding: 0;
+  background-color: #4BEAE9;
+}
+
+.stock {
+  border: solid;
+  border-radius: 30px;
+  padding: 1vw;
+  background-color: #74D732;
+  width: 7vw;
+  margin-left: 7vw;
+  text-align: center;
+  font-size: 1.2vw;
+  font-family: 'Dancing Script', cursive;
+}
+
+.stockOut {
+  border: solid;
+  border-radius: 30px;
+  padding: 1vw;
+  background-color: #F03706;
+  width: 7vw;
+  margin-left: 7vw;
+  text-align: center;
+  font-size: 1.2vw;
+  font-family: 'Dancing Script', cursive;
+}
+
+.imgProduct {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 10px;
+  border-style: inset;
+}
+
+#description {
+  text-align: center;
+  background-color: inherit;
+  border-style: none;
+  font-size: 2vw;
+  font-family: 'Dancing Script', cursive;
+}
+
+#deleteButton {
+  position: relative;
+  right: 9vw;
+  border-radius: 5px;
+  background-color: #F03706;
+}
+
+.addCart{
+  background-color: #EAE6E5;
+  height: 3vw;
+  font-size: 2vw;
+}

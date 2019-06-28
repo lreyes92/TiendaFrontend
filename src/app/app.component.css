@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Lobster|Rock+Salt&display=swap');
+
+.titulo {
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'Dancing Script', cursive;
+  width: 40vw;
+  border: solid black;
+  border-radius: 80px;
+  color: #000000;
+  position: relative;
+  left: 30vw;
+  background-image: url('../assets/fondo-Madera.jpg');
+}
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Rock Salt', cursive; */

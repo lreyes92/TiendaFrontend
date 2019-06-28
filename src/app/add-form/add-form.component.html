@@ -1,0 +1,36 @@
+<div id="form">
+<form id="addForm" class="form" method="post" enctype="text/plain" accept-charset="utf-8">
+<ul>
+<li>
+    <input type="number" class="field-style field-split align-left" placeholder="Id" />
+    <input type="text" class="field-style field-split align-right" placeholder="Name" [(ngModel)]="item.name" [ngModelOptions]="{standalone: true}" maxlength="100"/>
+
+</li>
+<li>
+    <input type="text" class="field-style field-split align-left" placeholder="Description" [(ngModel)]="item.description" [ngModelOptions]="{standalone: true}" maxlength="20"/>
+    <input type="number" class="field-style field-split align-right" placeholder="Stock" [(ngModel)]="item.stock" [ngModelOptions]="{standalone: true}" maxlength="2"/>
+</li>
+<li>
+    <input type="number" class="field-style field-split align-left" placeholder="Price" [(ngModel)]="item.price" [ngModelOptions]="{standalone: true}"/>
+    <input type="text" class="field-style field-split align-right" placeholder="Image-Url" [(ngModel)]="item.img" [ngModelOptions]="{standalone: true}"/>
+</li>
+<li>
+<button type="submit" (click)="addItem(item)">Add product</button>
+<button type="reset">Reset</button>
+</li>
+</ul>
+</form>
+</div>
+<!-- <div>
+ <form *ngIf="item" class="formProd" method="post" enctype="text/plain" accept-charset="utf-8">
+<legend>Datos el producto</legend>
+  <p class="block"><input [(ngModel)]="item.name" [ngModelOptions]="{standalone: true}" placeholder="Nombre" type="text" maxlength="100"></p>
+  <p class="block"><input [(ngModel)]="item.description" [ngModelOptions]="{standalone: true}" placeholder="Plataforma" type="text" maxlength="20"></p>
+  <p class="block"><input [(ngModel)]="item.stock" [ngModelOptions]="{standalone: true}" placeholder="Stock" type="number" maxlength="2"></p>
+  <p class="block"><input [(ngModel)]="item.price" [ngModelOptions]="{standalone: true}" placeholder="Precio" type="number"></p>
+  <p class="block"><input [(ngModel)]="item.quantity" [ngModelOptions]="{standalone: true}" placeholder="Cantidad" type="number" maxlength="3"></p>
+  <p><input [(ngModel)]="item.pic" [ngModelOptions]="{standalone: true}" type="file" accept="image/*"></p>
+  <p><button type="submit" (click)="addProduct(item)">Publicar producto</button></p>
+  <p><button type="reset">Reset</button></p>
+ </form>
+</div> -->

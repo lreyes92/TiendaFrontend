@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Lobster|Rock+Salt&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  font-family: 'Dancing Script', cursive;
+  height: 6vw;
+  background-image: url('../../assets/fondo-Madera.jpg');
+	background-size: cover;
+  margin: 2vw 0vw 0vw 0vw;
+	border-radius: 30px;
+  border-style: double;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav>li {
+  float: left;
+  padding: 2vw 0vw 0vw 2vw;
+}
+
+.nav li a {
+  color: black;
+	font-size: 1.8vw;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: white;
+  border-style: inset;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+	background-image: url('../../assets/fondo-Madera.jpg');
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}

@@ -1,0 +1,19 @@
+<button type="button" id="deleteButton" (click)="deleteItem(item.id)">X</button>
+<a (click)="navigateToItem()"><img src="../../assets/edit.png" alt="Imagen no encontrada" class="editIcon" /></a>
+<h2>{{item.name | uppercase}}</h2>
+<img [src]="item.img" alt="Imagen no encontrada" class="imgProduct">
+<input id="description" [(ngModel)]="item.description" (change)="updateItem(item)">
+<p>{{item.price | currency:'EUR'}}</p>
+<button type="button" name="button" (click)="reduceQuantity(item)">-</button>
+<!-- <input type="number" maxlength="2" placeholder="0" class="cantidad" [(ngModel)] = "item.quantity" > -->
+<input type="number" maxlength="2" placeholder="0" [(ngModel)]="item.quantity" (ngModelChange)="addQuantity(item)" id="quantity">
+<!-- <span>{{item.quantity}}</span> -->
+<button type="button" name="button" (click)="addQuantity(item)">+</button>
+<p *ngIf="item.stock>0" class="stock">{{item.stock}} in stock</p>
+<p *ngIf="item.stock===0" class="stockOut">Out of Stock.</p>
+<p class="addCart" (click)="addItemToCart(item,item.quantity)"> Add to Cart</p>
+
+<!-- <input type="text" (keydown)="showKey($event)">
+      <h2 (mouseover)="getCoord($event)">Hover me</h2> -->
+<!-- <pre>{{item | json}}</pre> -->
+<!-- <small class="totalPrice">Total: {{item | priceTotal |currency: 'EUR'}}</small> -->

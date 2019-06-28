@@ -1,0 +1,66 @@
+.form{
+	max-width: 45vw;
+    background: #FAFAFA;
+    padding: 3vw;
+    margin: 5vw auto;
+    box-shadow: 0.1vw 0.1vw 2.5vw rgba(0, 0, 0, 0.35);
+    border-radius: 1vw;
+    border: 0.6vw solid #409C41;
+}
+.form ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form ul li{
+	display: block;
+	    margin-bottom: 1vw;
+	    min-height: 3.5vw;
+}
+.form ul li  .field-style{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0.8vw;
+	outline: none;
+	border: 0.1vw solid #11E414;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form ul li  .field-style:focus{
+	box-shadow: 0 0 5px #11E414;
+	border:0.1vw solid #11E414;
+}
+.form ul li .field-split{
+	width: 22vw;
+}
+
+.form ul li input.align-left{
+	float:left;
+}
+.form ul li input.align-right{
+	float:right;
+}
+
+.form ul li input[type="submit"],
+.form ul li input[type="submit"] {
+	-moz-box-shadow: inset 0vw 0.1vw 0vw 0vw #3CA116;
+	-webkit-box-shadow: inset 0vw 0.1vw 0vw 0vw #3CA116;
+	box-shadow: inset 0vw 0.1vw 0vw 0vw #3CA116;
+	background-color: #2AB021;
+	border: 0.1vw solid #1A800F;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 0.8vw 1.8vw;
+	text-decoration: none;
+	font: 1.2vw Arial, Helvetica, sans-serif;
+
+}
+.form ul li input[type="submit"]:hover,
+.form ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #16870E 5%, #199810 100%);
+	background-color: #28739E;
+}
